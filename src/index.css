@@ -1,0 +1,71 @@
+@import "@fontsource/cairo/400.css";
+@import "@fontsource/cairo/600.css";
+@import "@fontsource/cairo/700.css";
+@import "@fontsource/cairo/800.css";
+@import "@fontsource/cairo/900.css";
+@import "tailwindcss";
+
+:root {
+  --font-en: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-ar: 'Cairo', system-ui, -apple-system, sans-serif;
+}
+
+body {
+  font-family: var(--font-en);
+  background-color: #0d141e;
+  color: #f7f5f1;
+  overflow-x: hidden;
+}
+
+[dir="rtl"] {
+  font-family: var(--font-ar);
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #111d2d;
+}
+::-webkit-scrollbar-thumb {
+  background: #2a3b50;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #8a1538;
+}
+
+/* Glassmorphism helpers */
+.glass-panel {
+  background: rgba(17, 29, 45, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-panel-light {
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-card-maroon {
+  background: linear-gradient(135deg, rgba(138, 21, 56, 0.18) 0%, rgba(17, 29, 45, 0.85) 100%);
+  border: 1px solid rgba(138, 21, 56, 0.35);
+}
+
+.glass-card-gold {
+  background: linear-gradient(135deg, rgba(197, 163, 107, 0.15) 0%, rgba(17, 29, 45, 0.85) 100%);
+  border: 1px solid rgba(197, 163, 107, 0.3);
+}
+
+/* Subtle grid background */
+.bg-grid-pattern {
+  background-size: 32px 32px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+}

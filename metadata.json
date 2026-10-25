@@ -1,0 +1,6 @@
+{
+  "name": "Q-MISSIONS — Qatar Global Youth Missions Forum",
+  "description": "An international youth action, sports, leadership, and community impact platform proposed for the Ministry of Sports and Youth, State of Qatar.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
